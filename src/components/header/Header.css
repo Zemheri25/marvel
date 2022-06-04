@@ -1,0 +1,15 @@
+.Headermain {
+    background-color: rgb(41, 37, 37);
+    width: 100%;
+    height: 17vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    
+
+}
+
+.marvelimg {
+    height: 10vh;
+    margin-right: 3rem;
+}

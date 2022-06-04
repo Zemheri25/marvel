@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: antiquewhite;
+}
+
+.Detailmain {
+  background-color: red;
+  width: 25vw;
+  min-height: 55vh;
+  border-radius: 20px;
+  margin: 2rem auto;
+  padding: 1rem;
+}
+
+.detailimg {
+  width: 15vw;
+  height: 40vh;
+  border-radius: 10px;
+}
+
+.imgdiv {
+  margin: 0rem auto;
+  width: 15vw;
+}
+
+.details {
+  margin-top: 1rem;
+}

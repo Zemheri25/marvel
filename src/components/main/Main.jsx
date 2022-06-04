@@ -18,7 +18,7 @@ const Main = () => {
       try {
         const response = await axios.get(url);
         setCharacters(response.data.data.results);
-        
+        console.log(response.data.data.results);
       } catch (error) {
         console.log(error);
       }

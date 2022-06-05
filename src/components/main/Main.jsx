@@ -26,24 +26,19 @@ const Main = () => {
     getApi();
   }, []);
 
-  
-
   const getApi2 = async () => {
-    setOffset(offset + 1)
+    setOffset(offset + 1);
     const response = await axios.get(url);
-    return response.data.data.results
-    
-    
+    return response.data.data.results;
   };
 
   const fetchData = async () => {
     getApi2().then((data) => setCharacters([...characters, ...data]));
-    
   };
 
   useEffect(() => {
-    console.log("offset",offset);
-    console.log("character", characters)
+    console.log("offset", offset);
+    console.log("character", characters);
   }, [offset, characters]);
 
   return (

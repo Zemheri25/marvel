@@ -91,7 +91,7 @@ export default function Details() {
 
           <Typography variant="body2" color="text.secondary">
             <h4 style={{ marginTop: "1rem" }}>
-              List Comics Wgere The Caracter Appers :
+              List Comics Where The Character Appears :
             </h4>
             <br />
             <ul>

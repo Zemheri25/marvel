@@ -13,8 +13,6 @@ export default function Details() {
 
   let FilterItems = character.comics.items;
 
-  
-
   let myNewArray = [];
 
   if (FilterItems.length > 10) {
@@ -27,7 +25,6 @@ export default function Details() {
     }
   }
 
-  
   let myObject = {};
   for (let i = 0; i < myNewArray.length; i++) {
     let firstIndex = myNewArray[i].name.indexOf("(");
@@ -38,27 +35,17 @@ export default function Details() {
     myObject[myNewArray[i].name] = newValue;
   }
 
-  const sortable = Object.entries(myObject).sort(([,a],[,b]) => a-b).reduce((r, [k, v]) => ({ ...r, [k]: v }), {});
+  const sortable = Object.entries(myObject)
+    .sort(([, a], [, b]) => a - b)
+    .reduce((r, [k, v]) => ({ ...r, [k]: v }), {});
 
   const myNewlist = [];
-  
 
-  for(let i of Object.keys(sortable)) {
-    myNewlist.push(i)
-  };
+  for (let i of Object.keys(sortable)) {
+    myNewlist.push(i);
+  }
 
-  console.log(myNewlist)
-
-
-
-
-
-
-
-
-
-
-
+  console.log(myNewlist);
 
   const navigate = useNavigate();
 

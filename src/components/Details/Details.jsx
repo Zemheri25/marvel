@@ -36,7 +36,7 @@ export default function Details() {
   }
 
   const sortable = Object.entries(myObject)
-    .sort(([, a], [, b]) => a - b)
+    .sort(([, a], [, b]) => b - a)
     .reduce((r, [k, v]) => ({ ...r, [k]: v }), {});
 
   const myNewlist = [];
